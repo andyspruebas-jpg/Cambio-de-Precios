@@ -1,0 +1,46 @@
+{
+  "name": "priceflow---gestor-de-precios",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --max-old-space-size=4096 node_modules/vite/bin/vite.js",
+    "server": "node --max-old-space-size=4096 server.mjs",
+    "dev:all": "concurrently \"npm run server\" \"npm run dev\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start:prod": "vite build && concurrently \"npm run server\" \"npm run preview\""
+  },
+  "dependencies": {
+    "@google/genai": "^1.30.0",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@tailwindcss/vite": "^4.0.0-beta.8",
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^12.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "exceljs": "^4.4.0",
+    "express": "^4.18.2",
+    "file-saver": "^2.0.5",
+    "framer-motion": "^12.23.26",
+    "lucide-react": "^0.555.0",
+    "node-fetch": "^3.3.2",
+    "openai": "^6.9.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-markdown": "^10.1.0",
+    "recharts": "^3.5.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "autoprefixer": "^10.4.23",
+    "concurrently": "^9.2.1",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "typescript": "~5.8.2",
+    "vite": "^6.4.1"
+  }
+}

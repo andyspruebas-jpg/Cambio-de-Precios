@@ -1,0 +1,79 @@
+# Archivos de entorno y configuración sensible
+.env
+.env.local
+.env.*.local
+
+# Configuración local (contiene API keys)
+config.ts
+server.mjs
+
+# Datos sensibles de la empresa
+datos/
+proveedores/
+usuarios/
+historial/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+dev.log
+server.log
+
+# Dependencias
+node_modules
+
+# Build
+dist
+dist-ssr
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+
+# Archivos de configuración de herramientas de IA
+.claude/
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Build tools
+.vite_total_reset
+
+# Archivos temporales
+*.temp
+*.tmp
+
+# Scripts de debug y testing
+*.mjs
+
+# Debug scripts
+bulk_check.mjs
+check_*.mjs
+fix_*.mjs
+investigate_*.mjs
+correct_revert*.mjs
+revert_*.mjs
+find_*.mjs
+verify_*.mjs
+test_*.mjs
+prepare_*.mjs
+sync_*.mjs
+quick_fix.mjs
+migrate_*.mjs
+server_*.mjs
+database.mjs
+
+# Archivos de datos
+diagnostico.txt
+pending_products_list.txt
+metadata.json
+failed_updates.json

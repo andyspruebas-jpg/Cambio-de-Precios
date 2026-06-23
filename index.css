@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+    --color-nuba: #AA1E65;
+    --color-andys: #5454D4;
+}
+
+/* Custom styles */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* NUCLEAR OPTION: Force full text visibility in tables - NO TRUNCATION */
+/* We use !important repeatedly to override any Tailwind utility classes */
+
+table {
+    table-layout: auto !important;
+    width: auto !important;
+    min-width: 100% !important;
+}
+
+table td,
+table th,
+table td *,
+table th * {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    max-width: none !important;
+}
+
+/* Specific override for product description cells - targeting only cells with a title attribute */
+table td[title] {
+    overflow: visible !important;
+    text-overflow: clip !important;
+    white-space: normal !important;
+    max-width: none !important;
+    min-width: 700px !important;
+    width: 700px !important;
+    /* Force the width */
+}
+
+table td[title]>div,
+table td[title]>span {
+    overflow: visible !important;
+    text-overflow: clip !important;
+    white-space: normal !important;
+    max-width: none !important;
+    min-width: 100% !important;
+    display: block !important;
+}
+
+/* Specific targeting for the product description cells/divs we modified */
+.whitespace-normal {
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: break-word !important;
+}
+
+.break-words {
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+}
